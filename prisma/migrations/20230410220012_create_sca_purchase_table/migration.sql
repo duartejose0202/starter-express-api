@@ -1,0 +1,8 @@
+-- SCAPurchase
+CREATE TABLE SCA_Purchase (
+  "id" UUID PRIMARY KEY,
+  "payment_intent" VARCHAR(255),
+  "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "deleted_at" TIMESTAMPTZ
+);

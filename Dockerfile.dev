@@ -1,0 +1,5 @@
+FROM node:hydrogen-alpine
+COPY . /app
+WORKDIR /app
+RUN rm -rf node_modules && yarn install --frozen-lockfile
+ENTRYPOINT [ "npm", "run", "start:debug" ]

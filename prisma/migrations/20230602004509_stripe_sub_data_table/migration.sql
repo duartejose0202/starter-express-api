@@ -1,0 +1,10 @@
+-- CREATE STRIPESUBDATA
+
+CREATE TABLE StripeSubData (
+  "id" UUID PRIMARY KEY,
+  "stripe_subscription_id" VARCHAR(255) NOT NULL UNIQUE,
+  "subscription_status" VARCHAR(22),
+  "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "updated_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "deleted_at" TIMESTAMPTZ
+);

@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "App" ADD COLUMN     "androidStatus" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "iosStatus" INTEGER NOT NULL DEFAULT 0;
